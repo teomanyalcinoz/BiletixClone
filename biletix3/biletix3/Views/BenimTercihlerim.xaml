@@ -4,9 +4,9 @@
              x:Class="biletix3.Views.BenimTercihlerim">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <ListView x:Name="favlistview"  HasUnevenRows="True">
+                
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
