@@ -9,7 +9,7 @@
                 <Grid Grid.Row="0">
 
                     <ImageButton Source="amadeus.png" Clicked="row0_Clicked"/>
-                    <ImageButton x:Name="fav" Source="heart.png" Margin="0,3,0,0" VerticalOptions="StartAndExpand" 
+                    <ImageButton BindingContext="amadeus" x:Name="fav" Source="heart.png" Margin="0,3,0,0" VerticalOptions="StartAndExpand" 
                                  HorizontalOptions="End" WidthRequest="50" Clicked="amadeusfav_Clicked"/>
 
                     <Grid BackgroundColor="#80000000" Margin="0,100,0,0">
@@ -24,8 +24,8 @@
 
                 <Grid Grid.Row="1">
                     <ImageButton Source="fahrenheit.png" Clicked="row1_Clicked"/>
-                    <ImageButton Source="heart.png" Margin="0,3,0,0" VerticalOptions="StartAndExpand" 
-                                 HorizontalOptions="End" WidthRequest="50" Clicked="ImageButton_Clicked"/>
+                    <ImageButton BindingContext="fahrenheit" Source="heart.png" Margin="0,3,0,0" VerticalOptions="StartAndExpand" 
+                                 HorizontalOptions="End" WidthRequest="50" Clicked="amadeusfav_Clicked"/>
 
                     <Label Text="Online Etkinlik" FontSize="16" Padding="3" VerticalOptions="StartAndExpand"
                            TextColor="White" BackgroundColor="#542e71" Margin="0,0,300,0"/>
@@ -42,8 +42,8 @@
                 </Grid>
                 <Grid Grid.Row="2">
                     <ImageButton Source="cghbunlar.png" Clicked="row2_Clicked"/>
-                    <ImageButton Source="heart.png" Margin="0,3,0,0" VerticalOptions="StartAndExpand" 
-                                 HorizontalOptions="End" WidthRequest="50"/>
+                    <ImageButton BindingContext="cghbunlar" Source="heart.png" Margin="0,3,0,0" VerticalOptions="StartAndExpand" 
+                                 HorizontalOptions="End" WidthRequest="50" Clicked="amadeusfav_Clicked"/>
 
                     <Grid BackgroundColor="#80000000" Margin="0,100,0,0">
                         <Label Text="20 Nisan" FontSize="16" TextColor="White" Padding="10"
@@ -57,8 +57,8 @@
 
                 <Grid Grid.Row="3">
                     <ImageButton Source="cennetbahcesi.png" Clicked="row3_Clicked"/>
-                    <ImageButton Source="heart.png" Margin="0,3,0,0" VerticalOptions="StartAndExpand" 
-                                 HorizontalOptions="End" WidthRequest="50"/>
+                    <ImageButton BindingContext="cennetbahcesi" Source="heart.png" Margin="0,3,0,0" VerticalOptions="StartAndExpand" 
+                                 HorizontalOptions="End" WidthRequest="50" Clicked="amadeusfav_Clicked"/>
 
                     <Grid BackgroundColor="#80000000" Margin="0,100,0,0">
                         <Label Text="05 Haziran" FontSize="16" TextColor="White" Padding="10"
@@ -72,8 +72,8 @@
 
                 <Grid Grid.Row="4">
                     <ImageButton Source="ahududu.png" Clicked="row4_clicked"/>
-                    <ImageButton Source="heart.png" Margin="0,3,0,0" VerticalOptions="StartAndExpand" 
-                                 HorizontalOptions="End" WidthRequest="50"/>
+                    <ImageButton BindingContext="ahududu" Source="heart.png" Margin="0,3,0,0" VerticalOptions="StartAndExpand" 
+                                 HorizontalOptions="End" WidthRequest="50" Clicked="amadeusfav_Clicked"/>
                     <Label Text="Online Etkinlik" FontSize="16" Padding="3" VerticalOptions="StartAndExpand"
                            TextColor="White" BackgroundColor="#542e71" Margin="0,0,300,0"/>
                     <Grid BackgroundColor="#80000000" Margin="0,100,0,0">
@@ -88,8 +88,8 @@
                 </Grid>
                 <Grid Grid.Row="5">
                     <ImageButton Source="thinkhouse.png" Clicked="row5_Clicked"/>
-                    <ImageButton Source="heart.png" Margin="0,3,0,0" VerticalOptions="StartAndExpand" 
-                                 HorizontalOptions="End" WidthRequest="50"/>
+                    <ImageButton BindingContext="thinkhouse" Source="heart.png" Margin="0,3,0,0" VerticalOptions="StartAndExpand" 
+                                 HorizontalOptions="End" WidthRequest="50" Clicked="amadeusfav_Clicked"/>
                     <Grid BackgroundColor="#80000000" Margin="0,100,0,0">
                         <Label Text="19 Nisan" FontSize="16" TextColor="White" Padding="10"
                            VerticalOptions="EndAndExpand" Margin="0,0,0,45" />

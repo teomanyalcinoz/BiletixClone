@@ -4,8 +4,19 @@
              x:Class="biletix3.Views.BenimTercihlerim">
     <ContentPage.Content>
         <StackLayout>
+            <Label Text="Benim Tercihlerim" TextColor="DarkSlateBlue" FontSize="40" 
+                   HorizontalTextAlignment="Center" FontAttributes="Bold"/>
             <ListView x:Name="favlistview"  HasUnevenRows="True">
-                
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                                <Label Text="{Binding etkinlikadi}" TextColor="Black"
+                                       FontSize="25" Margin="40,10"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
             </ListView>
         </StackLayout>
     </ContentPage.Content>

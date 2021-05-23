@@ -66,12 +66,7 @@ namespace biletix3.Views
             };
             db.InsertAsync(item);
             DisplayAlert("Tebrikler", "Kayit Basarili", "Tamam");
-
-
-
             OrtaligiTemizle();
-
-
         }
         private void OrtaligiTemizle()
         {

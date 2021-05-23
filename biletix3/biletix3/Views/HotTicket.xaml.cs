@@ -52,22 +52,26 @@ namespace biletix3.Views
             await Navigation.PushAsync(new Thinkhouse());
         }
 
-        private void amadeusfav_Clicked(object sender, EventArgs e)
+        private async void amadeusfav_Clicked(object sender, EventArgs e)
         {
+            var str = (sender as ImageButton).BindingContext as string; 
             var dbpath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "UserDatabase.db");
             var db = new SQLiteAsyncConnection(dbpath);
-            db.CreateTableAsync<Favlist>().Wait();
+            db.CreateTableAsync<Favori>().Wait();
 
-            var item = new Favlist
+            var item = new Favori
             {
-                fav = "Amadeus"
+                etkinlikadi = str
             };
-            if (db.Table<Favlist>().Where(fav => fav.fav == "Amadeus").FirstAsync() ==null) {
-                db.InsertAsync(item);
+            var sonuc = await db.QueryAsync<Favori>("select * from Favori where etkinlikadi=?", str);
+            
+
+            if ( sonuc.Count == 0) {
+                await db.InsertAsync(item);
             }
             else
             {
-                db.Table<Favlist>().Where(fav=> fav.fav == "Amadeus").DeleteAsync();
+                await db.QueryAsync<Favori>("delete from Favori where etkinlikadi=?", str);
             }
 
         }

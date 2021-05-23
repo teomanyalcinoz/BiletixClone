@@ -4,8 +4,8 @@ using System.Text;
 
 namespace biletix3.Models
 {
-    class Favlist
+    class Favori
     {
-        public string fav { get; set; }
+        public string etkinlikadi { get; set; }
     }
 }

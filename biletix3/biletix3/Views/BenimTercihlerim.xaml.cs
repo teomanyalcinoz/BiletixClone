@@ -16,29 +16,29 @@ namespace biletix3.Views
     public partial class BenimTercihlerim : ContentPage
     {
         public List<string> favlist = new List<string>();
+
         public BenimTercihlerim()
         {
             InitializeComponent();
-            favlistview.ItemsSource = new string[]
-            {
-                "ahududu",
-                "cennet bahcesi",
-                "kibarlik delisi"
-            };
-            VeriCek();
+            
+            
             
             //var favs = db.Table<Favlist>().ToListAsync();
         }
 
-        
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            VeriCek();
+        }
         async void VeriCek()
         {
             var dbpath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "UserDatabase.db");
             var db = new SQLiteAsyncConnection(dbpath);
-            db.CreateTableAsync<Favlist>().Wait();
+            db.CreateTableAsync<Favori>().Wait();
 
 
-            var sorgu = await db.Table<Favlist>().ToArrayAsync();
+            var sorgu = await db.Table<Favori>().ToListAsync();
             favlistview.ItemsSource = sorgu;
 
 
