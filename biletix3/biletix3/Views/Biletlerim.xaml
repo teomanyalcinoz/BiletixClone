@@ -3,15 +3,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="biletix3.Views.Biletlerim">
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout Padding="20,0">
+            <Label Text="Biletlerim" FontSize="50" HorizontalTextAlignment="Center" TextColor="#0099f2" FontAttributes="Bold" />
             <ListView Grid.Row="1" ItemsSource="{Binding Students}">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
                             <StackLayout Orientation="Horizontal">
-                                <Label Text="{Binding FirstName}"/>
-                                <Label Text="{Binding LastName}"/>
-                                <Label Text="{Binding EventName}"/>
+                                <Label Text="{Binding FirstName}" FontSize="18" TextColor="Black" HorizontalOptions="Start" HorizontalTextAlignment="Start"/>
+                                <Label Text="{Binding LastName}" FontSize="18" TextColor="Black" HorizontalOptions="Center" HorizontalTextAlignment="Center"/>
+                                <Label Text="{Binding EventName}" FontSize="18" TextColor="#0099f2"  HorizontalOptions="End" HorizontalTextAlignment="End"/>
                             </StackLayout>
                         </ViewCell>
                     </DataTemplate>

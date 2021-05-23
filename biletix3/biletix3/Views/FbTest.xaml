@@ -17,9 +17,6 @@
                 <Entry x:Name="evententry" Text="{Binding EventName}" Placeholder="Etkinlik Adı"/>
                 <Button WidthRequest="200" Margin="60,10" Text="SATIN AL" Command="{Binding AddStudentCommand}" Clicked="Button_Clicked"/>
             </StackLayout>
-
-            
         </Grid>
-
     </ContentPage.Content>
 </ContentPage>
