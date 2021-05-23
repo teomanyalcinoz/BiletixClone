@@ -11,7 +11,7 @@
                         <ViewCell>
                             <StackLayout Orientation="Horizontal">
                                 <Label Text="{Binding FirstName}" FontSize="18" TextColor="Black" HorizontalOptions="Start" HorizontalTextAlignment="Start"/>
-                                <Label Text="{Binding LastName}" FontSize="18" TextColor="Black" HorizontalOptions="Center" HorizontalTextAlignment="Center"/>
+                                <Label Text="{Binding LastName}" FontSize="18" TextColor="Green" HorizontalOptions="Center" HorizontalTextAlignment="Center"/>
                                 <Label Text="{Binding EventName}" FontSize="18" TextColor="#0099f2"  HorizontalOptions="End" HorizontalTextAlignment="End"/>
                             </StackLayout>
                         </ViewCell>
