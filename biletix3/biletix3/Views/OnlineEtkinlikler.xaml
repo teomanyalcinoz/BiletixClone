@@ -7,7 +7,7 @@
         <ScrollView>
             <Grid RowSpacing="10">
                 <Grid Grid.Row="0">
-                    <Image Source="celile.png"/>
+                    <ImageButton Source="celile.png" Clicked="Celile_Clicked"/>
                     <Label Text="Online Etkinlik" FontSize="16" Padding="3" VerticalOptions="StartAndExpand"
                            TextColor="White" BackgroundColor="#542e71" Margin="0,10,300,0"/>
                     <Grid BackgroundColor="#80000000" Margin="0,100,0,0">
@@ -21,7 +21,7 @@
                 </Grid>
 
                 <Grid Grid.Row="1">
-                    <Image Source="fahrenheit.png"/>
+                    <ImageButton Source="fahrenheit.png" Clicked="fahrenheit_Clicked"/>
                     <Label Text="Online Etkinlik" FontSize="16" Padding="3" VerticalOptions="StartAndExpand"
                            TextColor="White" BackgroundColor="#542e71" Margin="0,10,300,0"/>
 
@@ -36,7 +36,7 @@
 
                 </Grid>
                 <Grid Grid.Row="2">
-                    <Image Source="frida.png"/>
+                    <ImageButton Source="frida.png" Clicked="frida_Clicked"/>
                     <Label Text="Online Etkinlik" FontSize="16" Padding="3" VerticalOptions="StartAndExpand"
                            TextColor="White" BackgroundColor="#542e71" Margin="0,10,300,0"/>
                     <Grid BackgroundColor="#80000000" Margin="0,100,0,0">
@@ -50,7 +50,7 @@
                 </Grid>
 
                 <Grid Grid.Row="3">
-                    <Image Source="birdelinin.png"/>
+                    <ImageButton Source="birdelinin.png" Clicked="birdelinin_Clicked"/>
                     <Label Text="Online Etkinlik" FontSize="16" Padding="3" VerticalOptions="StartAndExpand"
                            TextColor="White" BackgroundColor="#542e71" Margin="0,10,300,0"/>
                     <Grid BackgroundColor="#80000000" Margin="0,100,0,0">
@@ -64,7 +64,7 @@
                 </Grid>
 
                 <Grid Grid.Row="4">
-                    <Image Source="kibar.png"/>
+                    <ImageButton Source="kibar.png" Clicked="kibar_Clicked"/>
                     <Label Text="Online Etkinlik" FontSize="16" Padding="3" VerticalOptions="StartAndExpand"
                            TextColor="White" BackgroundColor="#542e71" Margin="0,10,300,0"/>
                     <Grid BackgroundColor="#80000000" Margin="0,100,0,0">
@@ -77,7 +77,7 @@
                     </Grid>
                 </Grid>
                 <Grid Grid.Row="5">
-                    <Image Source="hosgeldinboyaci.png"/>
+                    <ImageButton Source="hosgeldinboyaci.png" Clicked="boyaci_Clicked"/>
                     <Label Text="Online Etkinlik" FontSize="16" Padding="3" VerticalOptions="StartAndExpand"
                            TextColor="White" BackgroundColor="#542e71" Margin="0,10,300,0"/>
                     <Grid BackgroundColor="#80000000" Margin="0,100,0,0">
@@ -90,7 +90,7 @@
                     </Grid>
                 </Grid>
                 <Grid Grid.Row="6">
-                    <Image Source="ahududu.png"/>
+                    <ImageButton Source="ahududu.png" Clicked="ahududu_Clicked"/>
                     <Label Text="Online Etkinlik" FontSize="16" Padding="3" VerticalOptions="StartAndExpand"
                            TextColor="White" BackgroundColor="#542e71" Margin="0,10,300,0"/>
                     <Grid BackgroundColor="#80000000" Margin="0,100,0,0">

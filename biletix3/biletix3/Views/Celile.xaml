@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="biletix3.Views.Celile">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="15,10" Spacing="10">
+                <StackLayout Orientation="Horizontal" Spacing="10">
+                    <Image Source="celile.png" WidthRequest="220"/>
+                    <StackLayout>
+                        <Label x:Name="lbltarih" Text="25.04.2021" TextColor="Black" FontSize="30" BackgroundColor="#ededed"
+                           VerticalTextAlignment="Center" HorizontalTextAlignment="Center" 
+                               VerticalOptions="StartAndExpand"/>
+                        <Label Text="23:59" FontSize="25" TextColor="Black" VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center" VerticalOptions="EndAndExpand" BackgroundColor="#ededed"/>
+                    </StackLayout>
+                </StackLayout>
+
+                <Label BackgroundColor="Purple" TextColor="White" Text="KAYITLI ONLİNE ETKİNLİK" 
+                   HorizontalTextAlignment="Center" VerticalTextAlignment="Center"
+                   FontSize="15" FontAttributes="Bold"/>
+
+                <StackLayout Spacing="0" Padding="0,10,0,20">
+                    <Button Text="Mekan Sayfası" BackgroundColor="#ededed" TextColor="Black" FontSize="17"
+                        BorderColor="Gray" BorderWidth="0.5" Padding="0,0,150,0" TextTransform="None" 
+                        ImageSource="mekansayfasi.png" Clicked="mekansayfasi_Clicked"/>
+                    <Button Text="Etkinlik Bilgileri" BackgroundColor="#ededed" TextColor="Black" FontSize="17"
+                        BorderColor="Gray" BorderWidth="0.5" Padding="0,0,150,0" TextTransform="None"
+                        ImageSource="info.png" Clicked="etkbilgileri_Clicked"/>
+                    <Button Text="Bilet Fiyatları" BackgroundColor="#ededed" TextColor="Black" FontSize="17"
+                        BorderColor="Gray" BorderWidth="0.5" Padding="0,0,165,0" TextTransform="None"
+                        ImageSource="biletfiyatlari.png" Clicked="biletfiyatlari_Clicked"/>
+                    <Button Text="Etkinlik Notları" BackgroundColor="#ededed" TextColor="Black" FontSize="17"
+                        BorderColor="Gray" BorderWidth="0.5" Padding="0,0,150,0" TextTransform="None"
+                        ImageSource="etknotlari.png" Clicked="etknotlari_Clicked"/>
+                </StackLayout>
+
+                <StackLayout Spacing="0">
+                    <Button Text="Resmi Site" BackgroundColor="#ededed" TextColor="Black" FontSize="17"
+                        BorderColor="Gray" BorderWidth="0.5" Padding="0,0,180,0" TextTransform="None"
+                        ImageSource="resmisite.png" Clicked="resmi_Clicked"/>
+                    <Button Text="Galeri ve Video" BackgroundColor="#ededed" TextColor="Black" FontSize="17"
+                        BorderColor="Gray" BorderWidth="0.5" Padding="0,0,150,0" TextTransform="None"
+                        ImageSource="gallery.png" Clicked="galerivideo_Clicked"/>
+                </StackLayout>
+
+                <StackLayout Spacing="0" BackgroundColor="#ededed">
+                    <Label Text="Bilet Ara" TextColor="#126e82" FontSize="20" Padding="24,10"/>
+                    <BoxView BackgroundColor="DarkGray" HeightRequest="1" Margin="0,0,0,10"/>
+
+                    <StackLayout Orientation="Horizontal">
+                        <Picker x:Name="kampanyapicker" Title="Kampanya Tipi" BackgroundColor="LightGray"
+                                Margin="10,0" VerticalOptions="Center" HorizontalOptions="CenterAndExpand"
+                                WidthRequest="150" TitleColor="Black"/>
+                        <Picker x:Name="tarihpicker" Title="Lütfen Seçin" VerticalOptions="Center"
+                                HorizontalOptions="CenterAndExpand" BackgroundColor="LightGray"
+                                WidthRequest="150" TitleColor="Black"/>
+                    </StackLayout>
+
+                    <Label Text="Bilet Seçimi" TextColor="Black" FontSize="18" Margin="24,20,0,10"/>
+                    <BoxView BackgroundColor="DarkGray" HeightRequest="1"/>
+                    <Label Text="TAM" FontSize="18" FontAttributes="Bold" Margin="24,10,0,5" 
+                           TextColor="Black" />
+
+                    <StackLayout Orientation="Horizontal">
+                        <Picker x:Name="tampicker" Title="0" BackgroundColor="LightGray"
+                                Margin="10,0" VerticalOptions="Center" HorizontalOptions="CenterAndExpand"
+                                WidthRequest="150" TitleColor="Black"/>
+                        <Picker x:Name="gosteripicker" Title="Lütfen Seçin" VerticalOptions="Center"
+                                HorizontalOptions="CenterAndExpand" BackgroundColor="LightGray"
+                                WidthRequest="150" TitleColor="Black"/>
+                    </StackLayout>
+
+                    <Label Text="Bölüm / Blok" TextColor="Black" Margin="24,15,0,0"/>
+                    <Picker x:Name="bolumpicker" Title="Lütfen Seçin" VerticalOptions="Center"
+                                HorizontalOptions="Start" BackgroundColor="LightGray"
+                                WidthRequest="150" TitleColor="Black" Margin="24,10"/>
+                    <BoxView BackgroundColor="DarkGray" HeightRequest="1" Margin="0,10,0,10"/>
+
+                    <StackLayout Orientation="Horizontal">
+                        <Image Source="oturma.png" WidthRequest="35" Margin="24,10,15,10" HorizontalOptions="Start"/>
+                        <Label Text="Oturma Planı" Margin="0,10" FontSize="16"/>
+                    </StackLayout>
+
+
+                    <Image Source="tiyatro.png" Margin="0,0,0,20"/>
+                    <BoxView BackgroundColor="DarkGray" HeightRequest="1" Margin="0,10,0,10"/>
+                    <Label Text="Eğer bu bileti istemiyorsanız bir daha aratın" Margin="20,10"
+                           FontSize="16" HorizontalTextAlignment="Center"/>
+                    <Button Text="DEVAM ET" Margin="15,10" WidthRequest="100"
+                            HorizontalOptions="Center" Clicked="Satinal_Clicked"/>
+
+                </StackLayout>
+            </StackLayout>
+
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -66,12 +66,7 @@ namespace biletix3.Views
             };
             db.InsertAsync(item);
             DisplayAlert("Tebrikler", "Kayit Basarili", "Tamam");
-
-
-
             OrtaligiTemizle();
-
-
         }
         private void OrtaligiTemizle()
         {
@@ -91,8 +86,8 @@ namespace biletix3.Views
         {
             var dbpath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "UserDatabase.db");
             var db = new SQLiteConnection(dbpath);
-
             var myquery = db.Table<User>().Where(u => u.Email.Equals(EntryMailGiris.Text) && u.Password.Equals(Entry_Password.Text)).FirstOrDefault();
+
             if (myquery != null)
             {
                 await DisplayAlert("Tebrikler", "Basari ile giris yaptiniz.", "Tamam");

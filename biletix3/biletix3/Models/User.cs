@@ -14,10 +14,7 @@ namespace biletix3.Models
         public string Soyisim { get; set; }
         public string Telno { get; set; }
         public int Cinsiyet { get; set; }
-
         public string Dogum { get; set; }
-
-        
 
 
     }
