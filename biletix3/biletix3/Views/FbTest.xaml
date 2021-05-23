@@ -8,16 +8,15 @@
                 <RowDefinition Height="auto"></RowDefinition>
                 <RowDefinition Height="auto"></RowDefinition>
             </Grid.RowDefinitions>
-            <StackLayout Grid.Row="0" VerticalOptions="Start">
-                <Label Text="BİLETİX" FontAttributes="Bold" FontSize="Title" TextColor="DarkSlateBlue" HorizontalTextAlignment="Center"/>
-                <Entry Text="{Binding FirstName}" Placeholder="İsim"/>
-                <Entry Text="{Binding LastName}" Placeholder="Soyisim"/>
-                <Entry Text="{Binding EventName}" Placeholder="Etkinlik Adı"/>
-                <Button WidthRequest="200" Text="SATIN AL" Command="{Binding AddStudentCommand}"/>
+            <StackLayout Grid.Row="0" VerticalOptions="Start" Spacing="15">
+                <Label Text="BİLETİX"  FontAttributes="Bold" 
+                       FontSize="35" TextColor="DarkSlateBlue" HorizontalTextAlignment="Center"
+                       />
+                <Entry x:Name="firstentry" Text="{Binding FirstName}" Placeholder="İsim"/>
+                <Entry x:Name="surentry" Text="{Binding LastName}" Placeholder="Soyisim"/>
+                <Entry x:Name="evententry" Text="{Binding EventName}" Placeholder="Etkinlik Adı"/>
+                <Button WidthRequest="200" Margin="60,10" Text="SATIN AL" Command="{Binding AddStudentCommand}" Clicked="Button_Clicked"/>
             </StackLayout>
-
-            
         </Grid>
-
     </ContentPage.Content>
 </ContentPage>

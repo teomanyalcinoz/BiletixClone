@@ -18,5 +18,12 @@ namespace biletix3.Views
             InitializeComponent();
             BindingContext = new StudentsViewModel();
         }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            firstentry.Text = null;
+            surentry.Text = null;
+            evententry.Text = null;
+        }
     }
 }
