@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="biletix3.Views.Mesajlarim">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White" Padding="10" Spacing="20">
+            <StackLayout Orientation="Horizontal">
+                <Image Source="biletix.png" HorizontalOptions="Start" VerticalOptions="Center" WidthRequest="120"/>
+                <StackLayout HorizontalOptions="StartAndExpand" Padding="10,0">
+                    <Label Text="Biletix App'te Yaz Fırsatları Seni Bekliyor!" TextColor="Black" FontSize="16"/>
+                    <Label Text="18-20 Mayıs 2017 tarihleri arasında Marina Arena Yaz konserleri sahne önü biletleri mobil uygulama kullanıcılarına özel %30 indirimli.Biletini mobil uygulamadan al,Biletix App yaz fırsatlarından sen de yararlan !" TextColor="Black" FontSize="14"/>
+                </StackLayout>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Image Source="biletix.png" HorizontalOptions="Start" VerticalOptions="Center" WidthRequest="120"/>
+                <StackLayout HorizontalOptions="StartAndExpand" Padding="10,0">
+                    <Label Text="Selfylilere özel indirim!!" TextColor="Black" FontSize="16"/>
+                    <Label Text="Türk Telekom Selfylilere özel Biletix.com'da biletler %20 indirimli kampanya her hafta cuma günü Biletix.com'da geçerli!!" TextColor="Black" FontSize="14"/>
+                </StackLayout>
+            </StackLayout>
+
+
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

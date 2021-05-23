@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms" 
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:local="clr-namespace:biletix3.Views"
+       Title="biletix3"
+       Shell.FlyoutWidth="325"
+       x:Class="biletix3.AppShell"
+       x:FieldModifier="public">
+   
+
+    <Shell.FlyoutHeader>
+        <StackLayout BackgroundColor="#0099f2">
+            <Label Text="Tüm işlemlerinizi görebilmek için lütfen üye girişi yapın."
+                   TextColor="White" Margin="20,5" VerticalOptions="StartAndExpand"/>
+            <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand" 
+                         Padding="10,5">
+                <Image Source="user.png" Margin="20,10" HorizontalOptions="Start"/>
+                <Button x:Name="btnGirisYap" Text="Giriş Yap" BackgroundColor="White" TextColor="#0099f2" 
+                        HorizontalOptions="StartAndExpand" HeightRequest="30" Padding="0"
+                        TextTransform="None" VerticalOptions="Center" Clicked="btnGirisYap_Clicked"/>
+            </StackLayout>
+            <Label Text="Hesabım" TextColor="White" HorizontalOptions="Start" Margin="25,0,0,10"/>
+        </StackLayout>
+    </Shell.FlyoutHeader>
+
+    <FlyoutItem Title="Biletlerim" Icon="biletlerim.png">
+        <ShellContent ContentTemplate="{DataTemplate local:Biletlerim}"/>
+    </FlyoutItem>
+
+    <FlyoutItem Title="Listem" Icon="listem.png">
+        <ShellContent ContentTemplate="{DataTemplate local:Deneme}"/>
+    </FlyoutItem>
+
+    <FlyoutItem Title="Yakınımda" Icon="yakinimda.png">
+        <ShellContent ContentTemplate="{DataTemplate local:Deneme}"/>
+    </FlyoutItem>
+
+    <FlyoutItem Title="Online Etkinlikler" Icon="online_etkinlikler.png">
+        <ShellContent ContentTemplate="{DataTemplate local:Deneme}"/>
+    </FlyoutItem>
+
+    <FlyoutItem Title="Seyretix" Icon="seyretix.png">
+        <ShellContent ContentTemplate="{DataTemplate local:Deneme}"/>
+    </FlyoutItem>
+
+    <FlyoutItem Title="Hot Ticket" Icon="hot_ticket.png">
+        <ShellContent ContentTemplate="{DataTemplate local:Deneme}"/>
+    </FlyoutItem>
+
+    <FlyoutItem Title="Benim Tercihlerim" Icon="benim_tercihlerim.png">
+        <ShellContent ContentTemplate="{DataTemplate local:BenimTercihlerim}"/>
+    </FlyoutItem>
+
+    <FlyoutItem Title="Mesajlarim" Icon="letter.png">
+        <ShellContent ContentTemplate="{DataTemplate local:Mesajlarim}"/>
+    </FlyoutItem>
+
+    <FlyoutItem Title="Ayarlar" Icon="ayarlar.png">
+        <ShellContent ContentTemplate="{DataTemplate local:Ayarlar}"/>
+    </FlyoutItem>
+
+    <FlyoutItem Title="Daha Fazlası" Icon="daha.png">
+        <ShellContent ContentTemplate="{DataTemplate local:DahaFazlası}"/>
+    </FlyoutItem>
+
+
+
+    <FlyoutItem FlyoutItemIsVisible="False">
+        <ShellContent x:Name="Deneme" Title="Deneme" ContentTemplate="{DataTemplate local:Deneme}"/>
+    </FlyoutItem>
+
+</Shell>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "883425457874",
+    "project_id": "etkinlikdb",
+    "storage_bucket": "etkinlikdb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:883425457874:android:dcb008f05742f9a1679f0b",
+        "android_client_info": {
+          "package_name": "com.yalovauni.biletix3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "883425457874-tt3945odphd4ojs7r07qj9khela2mf8j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0EynbSEogjfGdLIBsOhLs8QgrnMeluwQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "883425457874-tt3945odphd4ojs7r07qj9khela2mf8j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

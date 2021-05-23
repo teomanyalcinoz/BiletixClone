@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="biletix3.Views.FbTest">
+    <ContentPage.Content>
+        <Grid Margin="20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+            </Grid.RowDefinitions>
+            <StackLayout Grid.Row="0" VerticalOptions="Start">
+                <Label Text="BİLETİX" FontAttributes="Bold" FontSize="Title" TextColor="DarkSlateBlue" HorizontalTextAlignment="Center"/>
+                <Entry Text="{Binding FirstName}" Placeholder="İsim"/>
+                <Entry Text="{Binding LastName}" Placeholder="Soyisim"/>
+                <Entry Text="{Binding EventName}" Placeholder="Etkinlik Adı"/>
+                <Button WidthRequest="200" Text="SATIN AL" Command="{Binding AddStudentCommand}"/>
+            </StackLayout>
+
+            <ListView Grid.Row="1" ItemsSource="{Binding Students}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="{Binding FirstName}"/>
+                                <Label Text="{Binding LastName}"/>
+                                <Label Text="{Binding EventName}"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Grid>
+
+    </ContentPage.Content>
+</ContentPage>

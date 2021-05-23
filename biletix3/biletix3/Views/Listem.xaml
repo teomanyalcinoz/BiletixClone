@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="biletix3.Views.Listem"
+             Title="Listem">
+    <ContentPage.Content>
+        <StackLayout Padding="15" BackgroundColor="#ededed" Spacing="15">
+            <Label Text="Müzik Tarzınızı Belirleyin" TextColor="Black"/>
+            
+            <StackLayout Orientation="Horizontal" BackgroundColor="White" Padding="10">
+                <Image Source="facebook.png" HorizontalOptions="Start" VerticalOptions="Center"
+                       WidthRequest="48" />
+                <StackLayout HorizontalOptions="StartAndExpand" Padding="10,0">
+                    <Label Text="Facebook" TextColor="Black" FontSize="16"/>
+                    <Label Text="Facebook" TextColor="Black" FontSize="14"/>
+                </StackLayout>
+                <Image Source="biletlerim.png" WidthRequest="30" HorizontalOptions="End"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" BackgroundColor="White" Padding="10">
+                <Image Source="music.png" HorizontalOptions="Start" VerticalOptions="Center"
+                       WidthRequest="48" />
+                <StackLayout HorizontalOptions="StartAndExpand" Padding="10,0">
+                    <Label Text="Music" TextColor="Black" FontSize="16"/>
+                    <Label Text="Music" TextColor="Black" FontSize="14"/>
+                </StackLayout>
+                <Image Source="biletlerim.png" WidthRequest="30" HorizontalOptions="End"/>
+            </StackLayout>
+        </StackLayout>
+        
+        
+        
+        
+        
+        
+    </ContentPage.Content>
+</ContentPage>

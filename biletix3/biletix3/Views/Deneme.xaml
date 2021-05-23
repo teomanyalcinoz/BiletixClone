@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:biletix3.ViewModels"
+             xmlns:local="clr-namespace:biletix3.Views"
+             x:Class="biletix3.Views.Deneme">
+  <!--Pages can be added as references or inline-->
+
+    <Shell.TitleView>
+        <StackLayout Orientation="Horizontal">
+            <Image Source="biletix2.png" VerticalOptions="Center" HorizontalOptions="StartAndExpand" HeightRequest="45"/>
+            <ImageButton Source="filter.png" VerticalOptions="Center" HorizontalOptions="End" HeightRequest="30" Clicked="filter_Clicked"/>
+            <Image Source="search.png" VerticalOptions="Center" HorizontalOptions="End" HeightRequest="30" Margin="20,0"/>
+        </StackLayout>
+    </Shell.TitleView>
+
+    <TabbedPage.Children>
+        <local:Listem>
+            <local:Listem.BindingContext>
+                <vm:LoginViewModel/>
+            </local:Listem.BindingContext>
+        </local:Listem>
+
+        <local:Yakınımda>
+            <local:Yakınımda.BindingContext>
+                <vm:LoginViewModel/>
+            </local:Yakınımda.BindingContext>
+        </local:Yakınımda>
+
+        <local:OnlineEtkinlikler>
+            <local:OnlineEtkinlikler.BindingContext>
+                <vm:LoginViewModel/>
+            </local:OnlineEtkinlikler.BindingContext>
+        </local:OnlineEtkinlikler>
+        
+        <local:HotTicket>
+            <local:HotTicket.BindingContext>
+                <vm:LoginViewModel/>
+            </local:HotTicket.BindingContext>
+        </local:HotTicket>
+        
+        
+        
+    </TabbedPage.Children>
+
+
+</TabbedPage>

@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="biletix3.Views.HotTicket"
+             Title="Hot Tickets">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid RowSpacing="10">
+                <Grid Grid.Row="0">
+
+                    <ImageButton Source="amadeus.png" Clicked="row0_Clicked"/>
+                    <ImageButton Source="heart.png" Margin="0,3,0,0" VerticalOptions="StartAndExpand" 
+                                 HorizontalOptions="End" WidthRequest="50"/>
+
+
+                    <Grid BackgroundColor="#80000000" Margin="0,100,0,0">
+                        <Label Text="19 Mayıs" FontSize="16" TextColor="White" Padding="10"
+                               VerticalOptions="EndAndExpand" Margin="0,0,0,45"/>
+                        <Label Text="Amadeus" FontSize="16" TextColor="White" Padding="10" FontAttributes="Bold" 
+                           VerticalOptions="EndAndExpand" Margin="0,0,0,25"/>
+                        <Label Text="Zorlu PSM - Turkcell Sahnesi, İstanbul" VerticalOptions="End" FontSize="16" 
+                           TextColor="White" Padding="10" />
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="1">
+                    <ImageButton Source="fahrenheit.png" Clicked="row1_Clicked"/>
+                    <ImageButton Source="heart.png" Margin="0,3,0,0" VerticalOptions="StartAndExpand" 
+                                 HorizontalOptions="End" WidthRequest="50"/>
+
+                    <Label Text="Online Etkinlik" FontSize="16" Padding="3" VerticalOptions="StartAndExpand"
+                           TextColor="White" BackgroundColor="#542e71" Margin="0,0,300,0"/>
+
+                    <Grid BackgroundColor="#80000000" Margin="0,100,0,0">
+                        <Label Text="30 Nisan" FontSize="16" TextColor="White" Padding="10"
+                           VerticalOptions="EndAndExpand" Margin="0,0,0,45" />
+                        <Label Text="Fahrenheit 451" FontSize="16" TextColor="White" Padding="10" FontAttributes="Bold" 
+                           VerticalOptions="EndAndExpand" Margin="0,0,0,25"/>
+                        <Label Text="Online Etkinlikler, İstanbul" VerticalOptions="End" FontSize="16" 
+                           TextColor="White" Padding="10" />
+                    </Grid>
+
+                </Grid>
+                <Grid Grid.Row="2">
+                    <ImageButton Source="cghbunlar.png" Clicked="row2_Clicked"/>
+                    <ImageButton Source="heart.png" Margin="0,3,0,0" VerticalOptions="StartAndExpand" 
+                                 HorizontalOptions="End" WidthRequest="50"/>
+
+                    <Grid BackgroundColor="#80000000" Margin="0,100,0,0">
+                        <Label Text="20 Nisan" FontSize="16" TextColor="White" Padding="10"
+                           VerticalOptions="EndAndExpand" Margin="0,0,0,45" />
+                        <Label Text="BKM Tiyatro'da" FontSize="16" TextColor="White" Padding="10" FontAttributes="Bold" 
+                           VerticalOptions="EndAndExpand" Margin="0,0,0,25"/>
+                        <Label Text="Beşiktaş Kültür Merkezi, İstanbul" VerticalOptions="End" FontSize="16" 
+                           TextColor="White" Padding="10" />
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="3">
+                    <ImageButton Source="cennetbahcesi.png" Clicked="row3_Clicked"/>
+                    <ImageButton Source="heart.png" Margin="0,3,0,0" VerticalOptions="StartAndExpand" 
+                                 HorizontalOptions="End" WidthRequest="50"/>
+
+                    <Grid BackgroundColor="#80000000" Margin="0,100,0,0">
+                        <Label Text="05 Haziran" FontSize="16" TextColor="White" Padding="10"
+                           VerticalOptions="EndAndExpand" Margin="0,0,0,45" />
+                        <Label Text="Cennet Bahçesi Burgazada" FontSize="16" TextColor="White" Padding="10" FontAttributes="Bold" 
+                           VerticalOptions="EndAndExpand" Margin="0,0,0,25"/>
+                        <Label Text="İstanbul" VerticalOptions="End" FontSize="16" 
+                           TextColor="White" Padding="10" />
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="4">
+                    <ImageButton Source="ahududu.png" Clicked="row4_clicked"/>
+                    <ImageButton Source="heart.png" Margin="0,3,0,0" VerticalOptions="StartAndExpand" 
+                                 HorizontalOptions="End" WidthRequest="50"/>
+                    <Label Text="Online Etkinlik" FontSize="16" Padding="3" VerticalOptions="StartAndExpand"
+                           TextColor="White" BackgroundColor="#542e71" Margin="0,0,300,0"/>
+                    <Grid BackgroundColor="#80000000" Margin="0,100,0,0">
+                        <Label Text="24 Nisan" FontSize="16" TextColor="White" Padding="10"
+                           VerticalOptions="EndAndExpand" Margin="0,0,0,45" />
+                        <Label Text="Ahududu" FontSize="16" TextColor="White" Padding="10" FontAttributes="Bold" 
+                           VerticalOptions="EndAndExpand" Margin="0,0,0,25"/>
+                        <Label Text="Online Etkinlikler, İstanbul" VerticalOptions="End" FontSize="16" 
+                           TextColor="White" Padding="10" />
+                    </Grid>
+
+                </Grid>
+                <Grid Grid.Row="5">
+                    <ImageButton Source="thinkhouse.png" Clicked="row5_Clicked"/>
+                    <ImageButton Source="heart.png" Margin="0,3,0,0" VerticalOptions="StartAndExpand" 
+                                 HorizontalOptions="End" WidthRequest="50"/>
+                    <Grid BackgroundColor="#80000000" Margin="0,100,0,0">
+                        <Label Text="19 Nisan" FontSize="16" TextColor="White" Padding="10"
+                           VerticalOptions="EndAndExpand" Margin="0,0,0,45" />
+                        <Label Text="Lazarus" FontSize="16" TextColor="White" Padding="10" FontAttributes="Bold" 
+                           VerticalOptions="EndAndExpand" Margin="0,0,0,25"/>
+                        <Label Text="THINK House, İstanbul" VerticalOptions="End" FontSize="16" 
+                           TextColor="White" Padding="10" />
+                    </Grid>
+                </Grid>
+            </Grid>
+            </ScrollView>
+    </ContentPage.Content>
+    
+</ContentPage>

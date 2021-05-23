@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="biletix3.Views.GirisYap"
+             
+            >
+    
+    <ContentPage Title="Giris Yap" BackgroundColor="white">
+        <Shell.TitleView>
+            <Image Source="biletix.png"
+               HorizontalOptions="Start"
+               VerticalOptions="Center" HeightRequest="45"/>
+        </Shell.TitleView>
+
+        <StackLayout>
+            <StackLayout x:Name="LogoStack" VerticalOptions="Start">
+                <Image x:Name="LoginIcon" Source="biletix.png" HeightRequest="180" />
+            </StackLayout>
+            <StackLayout Padding="15,0" VerticalOptions="StartAndExpand" Spacing="20">
+                <StackLayout>
+                    <Label Text="Email" x:Name="Lbl_Username"/>
+                    <Entry Placeholder="Email" x:Name="EntryMailGiris"/>
+                </StackLayout>
+                <StackLayout>
+                    <Label Text="Şifre" x:Name="Lbl_Password"/>
+                    <Entry IsPassword="True" Placeholder="Şifre" x:Name="Entry_Password"/>
+                </StackLayout>
+                <Label Text="Şifremi Unuttum" TextColor="Red"/>
+                <Button  Text="Giriş" Margin="100,0" Clicked="Girisyap_Clicked"/>
+
+            </StackLayout>
+        </StackLayout>
+        
+        
+    </ContentPage>
+    
+    <ContentPage Title="Yeni Üye" BackgroundColor="#ededed">
+        <ScrollView>
+        <StackLayout Padding="15" Spacing="30">
+            <StackLayout>
+                <Label Text="Email"/>
+                <Entry x:Name="entryMail" Placeholder="Email"/>
+            </StackLayout>
+            <StackLayout>
+                <Label Text="Şifre"/>
+                <Entry IsPassword="True" x:Name="pass1" Placeholder="Şifre"/>
+                <Label Text="Şifre Tekrar"/>
+                 <Entry IsPassword="True" x:Name="pass2" Placeholder="Şifre"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <StackLayout HorizontalOptions="StartAndExpand" WidthRequest="150">
+                    <Label Text="İsim"/>
+                    <Entry x:Name="entryIsim" Placeholder="İsim" />
+                </StackLayout>
+                <StackLayout HorizontalOptions="StartAndExpand" WidthRequest="150">
+                    <Label Text="Soyisim"/>
+                    <Entry x:Name="entrySoy" Placeholder="Soyisim"/>
+                </StackLayout>
+            </StackLayout>
+            <Label Text="Telefon Numaranız"/>
+            <StackLayout Orientation="Horizontal">
+                <Entry Text="+90" IsReadOnly="True"/>
+                <Entry x:Name="TelNo" WidthRequest="300" Keyboard="Numeric" Placeholder="Telefon Numaranız"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <StackLayout HorizontalOptions="StartAndExpand">
+                    <Label Text="Cinsiyet"/>
+                        <Picker x:Name="CinsiyetPicker" Title="Seçiniz" WidthRequest="150"/>
+                    </StackLayout>
+                <StackLayout HorizontalOptions="StartAndExpand">
+                        <Label Text="Doğum Tarihi"/>
+                        <DatePicker x:Name="DateTime" WidthRequest="150"/>
+                    </StackLayout>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                    <CheckBox x:Name="checkB1" HeightRequest="20"/>
+                    <Label Text="Kişisel Verilerin Korunması Hakkında Bilgilendirme 
+                           Metnini okudum ve içeriğini anladım."/>
+                </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                    <CheckBox x:Name="checkB2" HeightRequest="20"/>
+                    <Label Text="Kişisel verilerimin, Biletix üyelik kaydı oluşturmak ve üyelik haklarından yararlanmak amacıyla biletix'in KVKK Bilgilendirme metninde yer alan hususlarda işlenmesine ve paylaşılmasına onay veriyorum."/>
+                </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                    <CheckBox x:Name="checkB3" HeightRequest="20"/>
+                    <Label TextColor="#f25287" Text="Biletix Etkinlik Habercisi ile Özel promosyon ve kampanya duyurularını e-posta ve sms yoluyla almak istiyorum."/>
+                </StackLayout>
+
+                <Button Text="KAYDET" FontSize="18" BackgroundColor="#2296F3" Margin="90,0" Clicked="Kayit_Clicked"/>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage>
+    
+</TabbedPage>

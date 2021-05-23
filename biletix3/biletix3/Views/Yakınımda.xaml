@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="biletix3.Views.Yakınımda"
+             Title="Yakınımda">
+    <ContentPage.Content>
+        <StackLayout Orientation="Horizontal" VerticalOptions="Start" Padding="10" Spacing="30">
+            <Image Source="heart.png" HeightRequest="40" HorizontalOptions="Start"/>
+            <Image Source="map.png" HeightRequest="40" HorizontalOptions="EndAndExpand"/>
+            <Image Source="calendar.png" HeightRequest="40" HorizontalOptions="End"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="biletix3.Views.OnlineEtkinlikler"
+             Title="Online Etkinlikler">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid RowSpacing="10">
+                <Grid Grid.Row="0">
+                    <Image Source="celile.png"/>
+                    <Label Text="Online Etkinlik" FontSize="16" Padding="3" VerticalOptions="StartAndExpand"
+                           TextColor="White" BackgroundColor="#542e71" Margin="0,10,300,0"/>
+                    <Grid BackgroundColor="#80000000" Margin="0,100,0,0">
+                        <Label Text="16 Nisan" FontSize="16" TextColor="White" Padding="10"
+                               VerticalOptions="EndAndExpand" Margin="0,0,0,45"/>
+                        <Label Text="Celile - Nazım Hikmet'in Annesi" FontSize="16" TextColor="White" Padding="10" FontAttributes="Bold" 
+                           VerticalOptions="EndAndExpand" Margin="0,0,0,25"/>
+                        <Label Text="Online Etkinlikler, İstanbul" VerticalOptions="End" FontSize="16" 
+                           TextColor="White" Padding="10" />
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="1">
+                    <Image Source="fahrenheit.png"/>
+                    <Label Text="Online Etkinlik" FontSize="16" Padding="3" VerticalOptions="StartAndExpand"
+                           TextColor="White" BackgroundColor="#542e71" Margin="0,10,300,0"/>
+
+                    <Grid BackgroundColor="#80000000" Margin="0,100,0,0">
+                        <Label Text="30 Nisan" FontSize="16" TextColor="White" Padding="10"
+                           VerticalOptions="EndAndExpand" Margin="0,0,0,45" />
+                        <Label Text="Fahrenheit 451" FontSize="16" TextColor="White" Padding="10" FontAttributes="Bold" 
+                           VerticalOptions="EndAndExpand" Margin="0,0,0,25"/>
+                        <Label Text="Online Etkinlikler, İstanbul" VerticalOptions="End" FontSize="16" 
+                           TextColor="White" Padding="10" />
+                    </Grid>
+
+                </Grid>
+                <Grid Grid.Row="2">
+                    <Image Source="frida.png"/>
+                    <Label Text="Online Etkinlik" FontSize="16" Padding="3" VerticalOptions="StartAndExpand"
+                           TextColor="White" BackgroundColor="#542e71" Margin="0,10,300,0"/>
+                    <Grid BackgroundColor="#80000000" Margin="0,100,0,0">
+                        <Label Text="08 Mayıs" FontSize="16" TextColor="White" Padding="10"
+                           VerticalOptions="EndAndExpand" Margin="0,0,0,45" />
+                        <Label Text="Frida Kahlo" FontSize="16" TextColor="White" Padding="10" FontAttributes="Bold" 
+                           VerticalOptions="EndAndExpand" Margin="0,0,0,25"/>
+                        <Label Text="Online Etkinlikler, İstanbul" VerticalOptions="End" FontSize="16" 
+                           TextColor="White" Padding="10" />
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="3">
+                    <Image Source="birdelinin.png"/>
+                    <Label Text="Online Etkinlik" FontSize="16" Padding="3" VerticalOptions="StartAndExpand"
+                           TextColor="White" BackgroundColor="#542e71" Margin="0,10,300,0"/>
+                    <Grid BackgroundColor="#80000000" Margin="0,100,0,0">
+                        <Label Text="14 Mayıs" FontSize="16" TextColor="White" Padding="10"
+                           VerticalOptions="EndAndExpand" Margin="0,0,0,45" />
+                        <Label Text="Bir Delinin Hatıra Defteri" FontSize="16" TextColor="White" Padding="10" FontAttributes="Bold" 
+                           VerticalOptions="EndAndExpand" Margin="0,0,0,25"/>
+                        <Label Text="Online Etkinlikler, İstanbul" VerticalOptions="End" FontSize="16" 
+                           TextColor="White" Padding="10" />
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="4">
+                    <Image Source="kibar.png"/>
+                    <Label Text="Online Etkinlik" FontSize="16" Padding="3" VerticalOptions="StartAndExpand"
+                           TextColor="White" BackgroundColor="#542e71" Margin="0,10,300,0"/>
+                    <Grid BackgroundColor="#80000000" Margin="0,100,0,0">
+                        <Label Text="08 Mayıs" FontSize="16" TextColor="White" Padding="10"
+                           VerticalOptions="EndAndExpand" Margin="0,0,0,45" />
+                        <Label Text="Kibarlık Delisi" FontSize="16" TextColor="White" Padding="10" FontAttributes="Bold" 
+                           VerticalOptions="EndAndExpand" Margin="0,0,0,25"/>
+                        <Label Text="Online Etkinlikler, İstanbul" VerticalOptions="End" FontSize="16" 
+                           TextColor="White" Padding="10" />
+                    </Grid>
+                </Grid>
+                <Grid Grid.Row="5">
+                    <Image Source="hosgeldinboyaci.png"/>
+                    <Label Text="Online Etkinlik" FontSize="16" Padding="3" VerticalOptions="StartAndExpand"
+                           TextColor="White" BackgroundColor="#542e71" Margin="0,10,300,0"/>
+                    <Grid BackgroundColor="#80000000" Margin="0,100,0,0">
+                        <Label Text="24 Nisan" FontSize="16" TextColor="White" Padding="10"
+                           VerticalOptions="EndAndExpand" Margin="0,0,0,45" />
+                        <Label Text="Hoşgeldin Boyacı" FontSize="16" TextColor="White" Padding="10" FontAttributes="Bold" 
+                           VerticalOptions="EndAndExpand" Margin="0,0,0,25"/>
+                        <Label Text="Online Etkinlikler, İstanbul" VerticalOptions="End" FontSize="16" 
+                           TextColor="White" Padding="10" />
+                    </Grid>
+                </Grid>
+                <Grid Grid.Row="6">
+                    <Image Source="ahududu.png"/>
+                    <Label Text="Online Etkinlik" FontSize="16" Padding="3" VerticalOptions="StartAndExpand"
+                           TextColor="White" BackgroundColor="#542e71" Margin="0,10,300,0"/>
+                    <Grid BackgroundColor="#80000000" Margin="0,100,0,0">
+                        <Label Text="24 Nisan" FontSize="16" TextColor="White" Padding="10"
+                           VerticalOptions="EndAndExpand" Margin="0,0,0,45" />
+                        <Label Text="Ahududu" FontSize="16" TextColor="White" Padding="10" FontAttributes="Bold" 
+                           VerticalOptions="EndAndExpand" Margin="0,0,0,25"/>
+                        <Label Text="Online Etkinlikler, İstanbul" VerticalOptions="End" FontSize="16" 
+                           TextColor="White" Padding="10" />
+                    </Grid>
+                </Grid>
+            </Grid>
+
+
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
