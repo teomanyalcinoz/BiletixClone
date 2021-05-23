@@ -4,9 +4,19 @@
              x:Class="biletix3.Views.Biletlerim">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="biletlerim"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <ListView Grid.Row="1" ItemsSource="{Binding Students}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="{Binding FirstName}"/>
+                                <Label Text="{Binding LastName}"/>
+                                <Label Text="{Binding EventName}"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

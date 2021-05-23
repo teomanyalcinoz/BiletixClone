@@ -16,19 +16,7 @@
                 <Button WidthRequest="200" Text="SATIN AL" Command="{Binding AddStudentCommand}"/>
             </StackLayout>
 
-            <ListView Grid.Row="1" ItemsSource="{Binding Students}">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell>
-                            <StackLayout Orientation="Horizontal">
-                                <Label Text="{Binding FirstName}"/>
-                                <Label Text="{Binding LastName}"/>
-                                <Label Text="{Binding EventName}"/>
-                            </StackLayout>
-                        </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
+            
         </Grid>
 
     </ContentPage.Content>

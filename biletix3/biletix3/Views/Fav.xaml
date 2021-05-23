@@ -8,8 +8,10 @@
             <CollectionView ItemsSource="{Binding MyItems}">
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
-                        <Label Text="{Binding .}"
-                                   HorizontalOptions="Center"/>
+                        <Button Text="{Binding .}"
+                                   HorizontalOptions="Start" VerticalOptions="CenterAndExpand" 
+                                   BorderWidth="2" BorderColor="CadetBlue"
+                                   FontSize="18" TextColor="Black" BackgroundColor="LightGray" Clicked="Button_Clicked"/>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>

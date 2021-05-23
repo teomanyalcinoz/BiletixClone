@@ -1,4 +1,5 @@
-﻿using System;
+﻿using biletix3.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,7 @@ namespace biletix3.Views
         public Biletlerim()
         {
             InitializeComponent();
+            BindingContext = new StudentsViewModel();
         }
     }
 }

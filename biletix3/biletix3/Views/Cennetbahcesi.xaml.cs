@@ -44,13 +44,13 @@ namespace biletix3.Views.etkinlikler
                 }
                 else
                 {
-                    DisplayAlert("Başarısız", "Bilet Alınamadı.", "Tamam");
+                    await DisplayAlert("Başarısız", "Bilet Alınamadı.", "Tamam");
                 }
             }
             catch (Exception ex)
             {
 
-                DisplayAlert("Hata", ex.Message.ToString(), "Tamam");
+                await DisplayAlert("Hata", ex.Message.ToString(), "Tamam");
             }
 
         }
